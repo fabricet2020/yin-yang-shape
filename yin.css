@@ -1,0 +1,38 @@
+.heart{
+    height: 48px;
+    width: 96px;
+    border-style: solid;
+    background-color: #eee;
+    border-width: 2px 2px 50px 2px;
+    border-radius: 100%;
+    border-color: red;
+    position: relative;
+    box-sizing: content-box;
+    transform: rotate(90deg);
+}
+
+.heart::before{
+    content: "";
+    height: 12px;
+    width: 12px;
+    border: 18px solid red;
+    background-color: #eee;
+    position: absolute;
+    box-sizing: content-box;
+    top:50%;
+    left:0;
+    border-radius: 100%;
+}
+
+.heart::after{
+    content: "";
+    height: 12px;
+    width: 12px;
+    border: 18px solid #eee;
+    background-color: red;
+    position: absolute;
+    box-sizing: content-box;
+    top:50%;
+    left:50%;
+    border-radius: 100%;
+}
